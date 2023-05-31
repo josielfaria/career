@@ -1,0 +1,21 @@
+:root {
+  --color-primary-1: #ADE0EB;
+  --color-primary-2: #599FAE;
+  --color-primary-3: #3F6E78;
+  --color-primary-4: #23444B;
+
+  --color-secondary-1: #54B7B1;
+
+  --color-ternary-1: #C6EC31;
+
+  --color-white-1: #FFFFFF;
+  --color-white-2: #A0ABB6;
+
+  --color-background-1: var(--color-primary-4);
+  --color-background-2: var(--color-primary-1);
+
+  --color-text-1: var(--color-primary-4);
+  --color-text-2: var(--color-primary-1);
+  --color-text-3: var(--color-white-1);
+  --color-text-4: var(--color-white-2);
+}

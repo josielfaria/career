@@ -1,0 +1,165 @@
+@import "variables.css";
+@import "fonts.css";
+@import "input.css";
+
+body {
+  font-family: 'LondrinaLight', cursive !important;
+  color: var(--color-white-1) !important;
+  background-color: var(--color-primary-1) !important;
+}
+
+.container {
+  max-width: 800px !important;
+}
+
+.background-1 {
+  background-color: var(--color-primary-4);
+}
+
+.background-2 {
+  background-color: var(--color-primary-1);
+}
+
+.color-text-1 {
+  color: var(--color-primary-4);
+}
+
+.color-text-2 {
+  color: var(--color-primary-1);
+}
+
+.color-text-3 {
+  color: var(--color-white-1);
+}
+
+.color-text-4 {
+  color: var(--color-white-2);
+}
+
+.title-section {
+  font-family: 'LondrinaBlack', cursive !important;
+  color: var(--color-primary-3);
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+}
+
+.card-1 {
+  background-color: var(--color-primary-3) !important;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  padding: 1rem;
+}
+
+.card-2 {
+  background-color: var(--color-primary-2) !important;
+  border-radius: 15px;
+  padding: 1rem;
+}
+
+/* scroll adjustment */
+:target {
+  scroll-margin-top: 82px;
+}
+
+/* NAVBAR */
+
+.brand {
+  width: 4rem;
+}
+
+.navbar {
+  font-family: 'LondrinaBlack', cursive !important;
+  background-color: var(--color-primary-4);
+}
+
+.navbar.scroll {
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+}
+
+.nav-link {
+  text-align: center;
+  font-size: 2rem !important;
+  color: var(--color-primary-1) !important;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+}
+
+.navbar-toggler {
+  background-color: var(--color-primary-1) !important;
+}
+
+/* COVER */
+
+#section-cover {
+  min-height: 100vh;
+}
+
+.cover-image {
+  max-width: 350px;
+}
+
+.title {
+  font-family: 'LondrinaBlack', cursive !important;
+  color: var(--color-primary-1) !important;
+  font-size: 60px;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+}
+
+.subtitle {
+  font-family: 'LondrinaBlack', cursive !important;
+  color: var(--color-primary-2) !important;
+  font-size: 45px;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+}
+
+/* SKILL */
+.item-skill {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+
+.item-skill img {
+  width: 4rem;
+}
+
+.item-highlight {
+  /* code */
+}
+
+/* CAREER */
+
+.card-career {
+  background-color: var(--color-primary-3);
+}
+
+.card-career-title img {
+  width: 4rem;
+}
+
+.card-career-content {
+  background-color: var(--color-primary-2);
+}
+
+/* CONTACT */
+#section-contact {
+  min-height: 55vw;
+}
+
+.card-contact {
+  max-width: 800px;
+}
+
+.card-contact p {
+  font-size: 1.2rem;
+}
+
+.card-contact ::placeholder {
+  color: var(--color-white-2);
+}
+
+/* SOCIAL MEDIAS */
+.social-medias {}
+
+.social-medias img {
+  width: 40px;
+}

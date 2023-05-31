@@ -1,0 +1,19 @@
+@font-face {
+  font-family: LondrinaThin;
+  src: url("../assets/fonts/LondrinaSolid-Thin.ttf");
+}
+
+@font-face {
+  font-family: LondrinaLight;
+  src: url("../assets/fonts/LondrinaSolid-Light.ttf");
+}
+
+@font-face {
+  font-family: LondrinaRegular;
+  src: url("../assets/fonts/LondrinaSolid-Regular.ttf");
+}
+
+@font-face {
+  font-family: LondrinaBlack;
+  src: url("../assets/fonts/LondrinaSolid-Black.ttf");
+}
