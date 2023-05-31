@@ -2,6 +2,7 @@
 @import "fonts.css";
 @import "input.css";
 @import "notifications.css";
+@import "animations.css";
 
 body {
   font-family: 'LondrinaLight', cursive !important;

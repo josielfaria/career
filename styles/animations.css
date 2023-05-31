@@ -1,0 +1,68 @@
+/* EFFECT BALANCE */
+
+.balance:hover {
+  -webkit-animation: swing 1s ease;
+  animation: anime-balance 1s ease;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+
+@keyframes anime-balance {
+  15% {
+    -webkit-transform: translateX(7px);
+    transform: translateX(7px);
+  }
+
+  30% {
+    -webkit-transform: translateX(-7px);
+    transform: translateX(-7px);
+  }
+
+  50% {
+    -webkit-transform: translateX(3px);
+    transform: translateX(3px);
+  }
+
+  65% {
+    -webkit-transform: translateX(-3px);
+    transform: translateX(-3px);
+  }
+
+  80% {
+    -webkit-transform: translateX(2px);
+    transform: translateX(2px);
+  }
+
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+/* EFFECT EXPAND */
+
+.rotation-plus:hover {
+  -webkit-animation: rotation 5s infinite;
+  animation: rotation 5s infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate3d(0, 1, 0, 0deg);
+  }
+
+  50% {
+    transform: rotate3d(0, 1, 0, 180deg);
+  }
+
+  100% {
+    transform: rotate3d(0, 1, 0, 360deg);
+  }
+}
+
+@media (max-width: 767.98px) {
+  .balance {
+    -webkit-animation: swing 1s infinite;
+    animation: anime-balance 1s infinite;
+  }
+}
