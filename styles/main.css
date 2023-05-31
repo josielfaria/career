@@ -1,6 +1,7 @@
 @import "variables.css";
 @import "fonts.css";
 @import "input.css";
+@import "notifications.css";
 
 body {
   font-family: 'LondrinaLight', cursive !important;
@@ -96,7 +97,7 @@ body {
   }
 }
 
-/* COVER */
+/* SECTION COVER */
 
 #section-cover {
   min-height: 100vh;
@@ -120,7 +121,7 @@ body {
   text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
 }
 
-/* SKILL */
+/* SECTION SKILL */
 .item-skill {
   display: flex;
   justify-content: center;
@@ -132,11 +133,7 @@ body {
   width: 4rem;
 }
 
-.item-highlight {
-  /* code */
-}
-
-/* CAREER */
+/* SECTION CAREER */
 
 .card-career {
   background-color: var(--color-primary-3);
@@ -150,10 +147,7 @@ body {
   background-color: var(--color-primary-2);
 }
 
-/* CONTACT */
-#section-contact {
-  min-height: 55vw;
-}
+/* SECTION CONTACT */
 
 .card-contact {
   max-width: 800px;
@@ -168,7 +162,6 @@ body {
 }
 
 /* SOCIAL MEDIAS */
-.social-medias {}
 
 .social-medias img {
   width: 40px;

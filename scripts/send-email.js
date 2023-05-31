@@ -1,30 +1,48 @@
-// function sendEmail() {
-//   let idSubject = "";
-//   let idEmail = "";
-//   let idMessage = "";
+(function () {
+  emailjs.init("user_bgjfpfAYAiGlQLRNsfPDv");
+})();
 
-//   idSubject = document.getElementById("subject").value;
-//   idEmail = document.getElementById("email").value;
-//   idMessage = document.getElementById("message").value;
+window.onload = function () {
+  document
+    .getElementById("contact-form")
+    .addEventListener("submit", function (event) {
+      event.preventDefault();
+      emailjs.sendForm("service_jdqexnua", "template_tkqgrii", this).then(
+        function () {
+          appendAlert("Aguarde o retorno :)", "primary");
+        },
+        function (error) {
+          console.log("FAILED SEND EMAIL...", error);
+          appendAlert("Algo de errado não está certo :S", "danger");
+        }
+      );
+    });
+};
 
-//   Email.send({
-//     SecureToken: "6426a8a63b756bd858b7d23072673e71",
-//     To: "developerjosiel@gmail.com",
-//     From: idEmail,
-//     Subject: idSubject,
-//     Body: "<html><h2>Header</h2><strong>Bold text</strong><br></br><em>Italic</em></html>",
-//   }).then((message) => alert(message));
-// }
-// Body: `<div>${idMessage}</div>`,
+// NOTIFICATION
+const alertPlaceholder = document.getElementById("notification");
+const appendAlert = (message, type) => {
+  const result = type === "danger" ? "AZEDOU!" : "DEU BOM!";
+  const wrapper = document.createElement("div");
+  wrapper.setAttribute("id", "notification-alert");
+  wrapper.innerHTML = [
+    `<div
+        class="alert alert-${type} alert-dismissible fade show"
+        role="alert"
+      >
+        <strong>${result}</strong> ${message}
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="alert"
+          aria-label="Close"
+        ></button>
+      </div>`,
+  ].join("");
 
-function sendEmail() {
-  Email.send({
-    Host: "smtp.elasticemail.com:2525",
-    Username: "developerjosiel@gmail.com",
-    Password: "1F248F340C59376F67339A0BBB32A0C7865F",
-    To: "developerjosiel@gmail.com",
-    From: "sender@example.com",
-    Subject: "Test Email",
-    Body: "<html><h2>Header</h2><strong>Bold text</strong><br></br><em>Italic</em></html>",
-  }).then((message) => alert("mail sent successfully"));
-}
+  alertPlaceholder.append(wrapper);
+
+  setTimeout(() => {
+    document.getElementById("notification-alert").remove();
+  }, 3000);
+};
