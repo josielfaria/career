@@ -7,7 +7,7 @@ window.onload = function () {
     .getElementById("contact-form")
     .addEventListener("submit", function (event) {
       event.preventDefault();
-      emailjs.sendForm("service_jdqexnua", "template_tkqgrii", this).then(
+      emailjs.sendForm("service_jdqexnu", "template_tkqgrii", this).then(
         function () {
           appendAlert("Aguarde o retorno :)", "primary");
         },
